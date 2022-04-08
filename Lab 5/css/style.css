@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+    background: rgba(255,255,255,.5);
+    box-shadow: 3px 0 7px rgba(0,0,0,.3);
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.top-menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h1{scroll-margin-top: 125px}
+.container-fluid{scroll-margin-top: 125px}
+main{padding-top: 100px}
+.navbar-logo {display: inline-block;}
+.menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    line-height: 61px;
+    padding-left: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    color: #0f4a99;
+    transition:.3s linear;
+}
+.menu-main a:before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: #0f4a99;
+    position: absolute;
+    left: 50%;
+    transform: rotate(45deg) translateX(6.5px);
+    opacity: 0;
+    transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+    .menu-main {
+        float: none;
+        padding-top: 20px;
+    }
+    .top-menu {
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+    .menu-main a {padding: 0 10px;}
+    .menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+    .menu-main li {display: block;}
+}
+
+.start{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+    min-width: 400px;
+
+}
+.start h1{
+    text-align: center;
+}
+.start-main{
+    margin-top: 20px;
+    margin-left: 10px;
+    align-items: baseline;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+.start-aside{
+    margin-top: 20px;
+
+    padding: 1.3rem;
+    background-color: #e5cd84;
+    font: 1rem 'Arial Narrow', sans-serif;
+    float: right;
+
+}
+.start-aside p{
+    font-size: larger;
+    color: #7e0012;
+}
+.start-aside p1{
+    font-size: x-large;
+    color: #003d85;
+}
+.main-img{
+    width:  200px;
+    height:  100px;
+    display: block;
+    margin: auto;
+}
+.fig-start{
+    text-align: center;
+}
+mark{
+    color: aqua;
+    background-color: initial;
+    font-size: x-large;
+}
+mark-1{
+    color: #7e0012;
+    background-color: aliceblue;
+    font-family: Arial;
+    font-size: xx-large;
+}
+
+.music{
+    scroll-margin-top: 125px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.movie{
+    scroll-margin-top: 125px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.form{
+    padding-bottom: 5px;
+    width: 180px;
+}
+label {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 90px;
+    height: 15px;
+}
+.form-art{
+    scroll-margin-top: 125px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+    min-width: 300px;
+    width: 200px;
+    text-align: right;
+}
+.form-prog{
+    margin-top: 5px;
+    width: 290px;
+}
